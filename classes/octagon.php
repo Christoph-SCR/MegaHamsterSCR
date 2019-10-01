@@ -38,11 +38,11 @@ class octagon extends room {
 
         return <<<ENDE
                 <div class="product">
-                    <h1>$name</h1>
+                    <h3 style="color:red">$name</h3>
                     <p>Side-Length: $sidelength</p>
                     <p>Area: $area</p>
                     <p>Price: $price</p>
-                    <h5>Special Equipment</h5>
+                    <h5 style="color:green">Special Equipment</h5>
                     <p>$features</p>
                 </div>
 ENDE;

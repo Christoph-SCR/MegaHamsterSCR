@@ -7,7 +7,7 @@ class rectangle extends room {
     private $width;
     private $height;
 
-    public function __construct($n, $p, $x, $l, $w, $h)
+public function __construct($n, $p, $x, $l, $w, $h)
     {
         $this->length = $l;
         $this->width = $w;
@@ -44,7 +44,7 @@ class rectangle extends room {
     }
 
 
-    public function toHTML() {
+    public function toHTML(){
         $features = $this->getSpecialFeatures();
         $price = $this->getPreis();
         $length = $this->getLength();
@@ -55,13 +55,13 @@ class rectangle extends room {
 
         return <<<ENDE
              <div class="product">
-                <h1>$name</h1>
+                <h3 style="color:red">$name</h3>
                 <p>Length: $length</p>
                 <p>Width: $width</p>
                 <p>Height: $height</p>
                 <p>Area: $area</p>
                 <p>Price: $price</p>
-                <h5>Special Equipment</h5>
+                <h5 style="color:green">Special Equipment</h5>
                 <p>$features</p>
              </div> 
 ENDE;

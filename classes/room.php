@@ -5,10 +5,10 @@ abstract class room
     private $price;
     private $SpecialFeatures;
 
-    public function __construct($n, $p, $x)
+    public function __construct($name, $preis, $x)
     {
-        $this->name = $n;
-        $this->price = $p;
+        $this->name = $name;
+        $this->price = $preis;
         $this->SpecialFeatures = $x;
     }
 
@@ -41,4 +41,7 @@ abstract class room
         return $this->getName() . ' - ' . $this->getPrice();
     }
 
+    public abstract function toHTML();
+
+    public abstract function getArea();
 }
