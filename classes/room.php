@@ -3,13 +3,13 @@ abstract class room
 {
     private $name;
     private $price;
-    private $xtraFeatures;
+    private $SpecialFeatures;
 
     public function __construct($n, $p, $x)
     {
         $this->name = $n;
         $this->price = $p;
-        $this->xtraFeatures = $x;
+        $this->SpecialFeatures = $x;
     }
 
     /**
@@ -33,7 +33,7 @@ abstract class room
      */
     public function getSpecialFeatures()
     {
-        return $this->xtraFeatures;
+        return $this->SpecialFeatures;
     }
 
     public function __toString()
