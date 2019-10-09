@@ -21,15 +21,17 @@ class octagon extends room {
     }
 
     /**
-     * @return mixed
+     * @return float
      */
-
-    public function getSidelength()
+    public function getSidelength() : float
     {
         return $this->sidelength;
     }
 
-    public function toHTML() {
+    /**
+     * @return string
+     */
+    public function toHTML() : string {
         $features = $this->getSpecialFeatures();
         $price = $this->getPreis();
         $sidelength = $this->getSidelength();
