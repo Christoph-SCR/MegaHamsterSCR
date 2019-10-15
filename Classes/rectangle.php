@@ -1,5 +1,6 @@
 <?php
-require_once('room.php');
+
+namespace ChaosFr3ak\Megahamster;
 
 class rectangle extends room {
 

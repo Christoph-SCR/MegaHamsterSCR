@@ -1,6 +1,6 @@
 <?php
 
-require_once 'room.php';
+namespace ChaosFr3ak\Megahamster;
 
 class octagon extends room {
     var $sidelength;

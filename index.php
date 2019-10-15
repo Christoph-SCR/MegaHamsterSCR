@@ -9,13 +9,14 @@
         <h2 style="color:blue">Aktuell bieten wir folgende Produkte an:</h2>
         <?php
 
-        include('classes/room.php');
-        include('classes/rectangle.php');
-        include('classes/octagon.php');
+        include('Classes/room.php');
+        include('Classes/rectangle.php');
+        include('Classes/octagon.php');
+        use ChaosFr3ak\Megahamster as Classes;
 
-        $array_rooms = [new rectangle('The room','EUR 49,-','none','80', '50','50'),
-            new rectangle('The Flat','EUR 149,-','Food Jars','120','80','80'),
-            new octagon('The Pit','EUR 100,-','none','15')];
+        $array_rooms = [new Classes\rectangle('The room','EUR 49,-','none','80', '50','50'),
+            new Classes\rectangle('The Flat','EUR 149,-','Food Jars','120','80','80'),
+            new Classes\octagon('The Pit','EUR 100,-','none','15')];
 
         foreach ($array_rooms as $room) {
             echo $room -> toHTML();

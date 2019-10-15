@@ -1,4 +1,7 @@
 <?php
+
+namespace ChaosFr3ak\Megahamster;
+
 abstract class room
 {
     private $name;
